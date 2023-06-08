@@ -1,0 +1,12 @@
+# ide folders
+.idea/
+
+# not project files
+__pycache__
+.DS_Store
+
+# venv
+.venv/
+
+.pytest_cache
+tests/.pytest_cache
