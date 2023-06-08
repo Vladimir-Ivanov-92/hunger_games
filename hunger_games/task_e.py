@@ -1,7 +1,10 @@
 import collections
 import re
 
+from hunger_games.task_f import runtime_all_methods
 
+
+@runtime_all_methods
 class Text:
     def __init__(self, text: str):
         self.text = text
@@ -58,15 +61,16 @@ if __name__ == '__main__':
     text_3 = "Дед искал довод, но заказ получил казак, поэтому устроил топот"
 
     # Cамое длинное слово в тексте:
-    print(f"Cамое длинное слово в text_1: {Text(text_1).get_longest_word()}")
+    print(f"Cамое длинное слово в text_1: {Text(text_1).get_longest_word()}",
+          end="\n\n")
 
     # Cамое часто встречающееся слово:
     print(f"Cамое часто встречающееся слово в text_2: "
-          f"{Text(text_2).get_most_common_word()}")
+          f"{Text(text_2).get_most_common_word()}", end="\n\n")
 
     # Количество спецсимволов в тексте:
     print(f"Количество спецсимволов в text_1: "
-          f"{Text(text_1).get_number_of_special_characters()}")
+          f"{Text(text_1).get_number_of_special_characters()}", end="\n\n")
 
     # Все паллиндромы в тексте:
-    print(f"Все паллиндромы в text_3: {Text(text_3).get_all_palindromes()}")
+    print(f"Все паллиндромы в text_3: {Text(text_3).get_all_palindromes()}", end="\n\n")
