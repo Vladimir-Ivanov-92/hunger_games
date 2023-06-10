@@ -1,15 +1,15 @@
 import time
 
-from hunger_games import (task_a,
-                          task_b_case_1,
-                          task_b_case_2,
-                          task_b_case_3,
-                          task_c,
-                          task_d,
-                          task_e_get_longest_word,
-                          task_e_get_most_common_word,
-                          task_e_get_number_of_special_characters,
-                          task_e_get_all_palindromes)
+from hunger_games.task_test_cases import (task_a,
+                                          task_b_case_1,
+                                          task_b_case_2,
+                                          task_b_case_3,
+                                          task_c,
+                                          task_d,
+                                          task_e_get_longest_word,
+                                          task_e_get_most_common_word,
+                                          task_e_get_number_of_special_characters,
+                                          task_e_get_all_palindromes)
 
 
 def main():
