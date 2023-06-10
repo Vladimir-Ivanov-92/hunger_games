@@ -7,9 +7,9 @@ error_message_url = "Неверно указан url"
 
 
 @pytest.mark.parametrize("url, num_of_requests, expected_result",
-                         [("https://google.com", 10, "Number of response: 10"),
-                          ("https://google.com", 100, "Number of response: 100"),
-                          ("https://mail.ru", 50, "Number of response: 50"),
+                         [("https://google.com", 10, "Number of response: 10\n\n"),
+                          ("https://google.com", 100, "Number of response: 100\n\n"),
+                          ("https://mail.ru", 50, "Number of response: 50\n\n"),
                           ("https://mail.ru", -1, error_message_num),
                           ("https://mail.ru", 0, error_message_num),
                           ("htt/mail.com", 0, error_message_num),

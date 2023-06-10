@@ -18,7 +18,7 @@ def get_git_project_title(links: list[str]) -> str:
             response += error_message.format(link=link) + "\n"
         else:
             raw_title = link.split("/")[-1].split(".")
-            if len(raw_title) == 2 and raw_title[1] == "git" or len(raw_title) == 1:
+            if (len(raw_title) == 2 and raw_title[1] == "git") or len(raw_title) == 1:
                 git_project_title = raw_title[0]
                 response += response_message.format(git_project_title) + "\n"
             else:
