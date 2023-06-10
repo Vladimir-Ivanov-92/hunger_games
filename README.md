@@ -30,6 +30,8 @@ cd solution_hg
 git clone https://github.com/Vladimir-Ivanov-92/hunger_games.git
 cd hunger_games
 python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 pytest
 python3 run_all_tasks.py
 ```
