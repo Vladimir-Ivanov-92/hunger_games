@@ -31,7 +31,7 @@ async def _get_response(session: ClientSession, url: str,
     Отправляет запрос на сервер, и возвращает полученный ответ.
     """
     async with session.get(url) as response:
-        print(f"{num_task}")
+        print(f"{num_task}", end=" ")
         return response
 
 

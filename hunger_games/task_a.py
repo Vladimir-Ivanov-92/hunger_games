@@ -1,4 +1,7 @@
-def get_git_project_title(links: list[str]) -> str:
+from collections.abc import Sequence
+
+
+def get_git_project_title(links: Sequence[str]) -> str:
     """
     Функция принимает в качестве аргумента набор ссылок. Ссылки имеют формат ссылок
     на проекты на гитхабе. Функция обрабатвает полученные ссылки и возвращает
@@ -36,7 +39,7 @@ if __name__ == '__main__':
         "https://githubbbbbbb.com/miguelgrinberg/APIFairy.git",
         "https:githubbbbbbb.com/miguelgrinberg/APIFairy.git",
         "https:githubbbbbbb.com/miguelgrinberg/Test1.git/",
-        "https://github.com/miguelgrinberg/API-Fairy.new"
+        "https://github.com/miguelgrinberg/API-Fairy.new",
         "",
     ]
 
