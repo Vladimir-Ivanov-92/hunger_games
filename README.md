@@ -17,7 +17,7 @@ mkdir solution_hg
 cd solution_hg
 git clone https://github.com/Vladimir-Ivanov-92/hunger_games.git
 cd hunger_games
-poetry install
+poetry install --without dev
 poetry run python3 -m pytest
 poetry run python3 -m run_all_tasks
 ```
